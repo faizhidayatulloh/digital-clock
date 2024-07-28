@@ -1,8 +1,31 @@
+* {box-sizing: border-box;}
 @font-face {
     font-family: 'digital-7';
     src: url('digital-7.ttf');
 }
-div {
-    border: 1px solid red;
+#jam {
     font-family: 'digital-7',sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    outline: 10px inset rgb(236, 236, 245);
+    padding: 2px 10px;
+    background-color: rgb(219, 225, 130);
+}
+h1 {
+    font-size: 50px;
+}
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+body {
+    background-image: url(diya.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wadah {
+    position: fixed;
+    top: 10%;
 }

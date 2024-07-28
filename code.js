@@ -24,5 +24,8 @@ function tampil() {
     const bulan = waktu.getMonth();
     const tanggal = waktu.getDate();
     const hari = waktu.getDay();
-    atas[0].innerHTML = detik;
+    atas[0].innerHTML =jam+" : "+menit+" : "+ detik;
+    bawah[0].innerHTML = namaHari[hari]+" "+" "+tanggal+" - "+namabulan[bulan]+" - "+tahun
 }
+
+setInterval(tampil)
