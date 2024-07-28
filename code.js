@@ -1,17 +1,28 @@
-let angka = 0;
-function mulai() {
-    angka+=1;
-    document.getElementById('satu').innerHTML = angka;
-}
+//bikin Array bulan
+const namabulan = [
+    'Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus',
+    'September','Oktober','November','Desember'
+];
+const namaHari = [
+    'Minggu','Senin','Selasa','Rabu','Kamis',"Jum'at",'Sabtu'
+]
 
-function reset() {
-    angka = 0;
-    document.getElementById('satu').innerHTML = angka;
-}
 
-function mainkan() {
-    const x = document.getElementById('suara');
-    x.play();
-}
 
-document.getElementById('tombol').addEventListener('click',mainkan);
+
+
+let layar = document.getElementById('jam');
+let atas = layar.getElementsByTagName('h1');
+let bawah = layar.getElementsByTagName('p');
+
+function tampil() {
+    const waktu = new Date();
+    const jam = waktu.getHours();
+    const menit = waktu.getMinutes();
+    const detik = waktu.getSeconds();
+    const tahun = waktu.getFullYear();
+    const bulan = waktu.getMonth();
+    const tanggal = waktu.getDate();
+    const hari = waktu.getDay();
+    atas[0].innerHTML = detik;
+}
