@@ -21,11 +21,14 @@ p {
     font-weight: bold;
 }
 body {
-    background-image: url(diya.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: blue;
+    margin: 0;
+    padding: 20px;
 }
 .wadah {
     position: fixed;
     top: 10%;
+    max-width: 100%;
+    right: 0;
+    left: 0;
 }
